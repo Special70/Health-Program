@@ -1,4 +1,4 @@
-package process.mainMenuChildren.formCreationChildren;
+package process.menuFiles.formCreationChildren;
 
 import languageFiles.LanguageFile;
 import process.SystemFunctions;

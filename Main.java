@@ -1,7 +1,7 @@
 
 
 import languageFiles.LanguageFile;
-import process.MenuHandler;
+import process.SystemCore;
 import process.SystemFunctions;
 
 public class Main {
@@ -10,7 +10,7 @@ public class Main {
         
     }
     public static void main(String[] args) {
-        MenuHandler menuObj = new MenuHandler();
+        SystemCore menuObj = new SystemCore();
         
         // Input Buffer
         while (SystemFunctions.getProgramStatus()) {
