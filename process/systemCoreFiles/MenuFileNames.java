@@ -8,7 +8,17 @@ public class MenuFileNames {
     // Intended to be used as an instance object not a static object.
 
     public String frontMenu = "frontMenu";
-    public String frontCreationSelection = "frontCreationSelection"; 
-        public String personalInformationMenu = "personalInformationMenu";
+        public String dataMainMenu = "dataMainMenu";
+            public String formCreationSelection = "frontCreationSelection"; 
+                public String personalInformationMenu = "personalInformationMenu";
+                public String billingInformationMenu = "billingInformationMenu";
+                public String prescriptionsMenu = "prescriptionsMenu";
+                public String medicalRecordsMenu = "medicalRecordsMenu";
+            public String viewFieldsMenu = "viewFieldsMenu";
+            public String resetFieldsMenu = "resetFieldsMenu";
+            public String submitFieldsMenu = "submitFieldsMenu";
+        public String aboutUsMenu = "aboutUs";
+        public String accessExistingFormsMenu = "accessExistingFormsMenu";
+
     
 }

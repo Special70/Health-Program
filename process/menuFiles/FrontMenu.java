@@ -11,33 +11,32 @@ public class FrontMenu {
     private LanguageFile lang = new LanguageFile();
 
     private Scanner scanner = new Scanner(System.in);
-    private String savedInput;
 
     public void run() {
         lang.getText("frontMenu");
         System.out.print(" > ");
-        try { // Input Verifier
-            String userInput = scanner.nextLine();
-            if (userInput.length() == 1 && ("123".contains(userInput))) { 
-                savedInput = userInput;
-            }
-            else return;
-        } catch (Exception e) {
-            return;
-        }
-        switch (this.savedInput) {
-            case "1": {
-                SystemFunctions.changeMenu(fileNames.frontCreationSelection);
+        String userInput = scanner.nextLine();
+        switch (userInput) {
+            case "1": { // Switch to Form Creation Selection (See FormCreationSelection.java)
+                SystemFunctions.changeMenu(fileNames.dataMainMenu);
                 SystemFunctions.clearConsole();
                 break;
             }
-            case "2": break;
-            case "3": {
+            case "2": {
+                SystemFunctions.changeMenu(fileNames.accessExistingFormsMenu);
+                SystemFunctions.clearConsole();
+                break;
+            }
+            case "3": { // Exit the program
                 SystemFunctions.shutDownProgram();
                 SystemFunctions.clearConsole();
                 break;
             }
-            default : return;
+            case "i": { // Switch to About Us Display (See AboutUsMenu.java)
+                SystemFunctions.changeMenu(fileNames.aboutUsMenu);
+                SystemFunctions.clearConsole();
+            }
+            default : return; // Exit menu if invalid input (Normally stopped by the if condition unless some unexpected error occurs)
         }
     }
 }
