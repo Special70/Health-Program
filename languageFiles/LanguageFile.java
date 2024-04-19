@@ -120,7 +120,7 @@ public class LanguageFile {
         System.out.println("|   Name:"+obj.getValues("name"));
         System.out.println("|   Age:"+obj.getValues("age"));
         System.out.println("|   Gender:"+obj.getValues("gender"));
-        System.out.println("|   Contact Informaton:"+obj.getValues("contact_information"));
+        System.out.println("|   Contact Informaton:"+obj.getValues("contact_info"));
         System.out.println("|   Birth Date:"+obj.getValues("birth_date"));
         System.out.println("|   Past Current Illnesses:");
         displayFormattedArrayValues(obj.getArrayValues("past_current_illnesses"));

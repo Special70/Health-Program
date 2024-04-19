@@ -49,6 +49,8 @@ public class DataList {
         records.add(tempData2);
     }
 
+    // Call this value to insert the current values from the temporary object to a nonstatic
+    // object and add it to the records ArrayList static variable for display
     public static void appendValue() {
         PatientDataObject tempObj = new PatientDataObject();
         tempObj.setValues("name", DataFormat.tempDataObject.getValues("name"));
@@ -62,6 +64,7 @@ public class DataList {
         records.add(tempObj);
     }
 
+    // Mainly used by AccessExistingForms.java file
     public void displayValues() {
         for (int i = 0; i < records.size(); i++) {
             lang.displayPatientRecords(records.get(i));
