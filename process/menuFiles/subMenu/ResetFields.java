@@ -11,6 +11,7 @@ public class ResetFields {
     private MenuFileNames fileNames = new MenuFileNames();
     public void run() {
         while (true) {
+            SystemFunctions.clearConsole();
             System.out.println("Are you sure you want to reset the fields?");
             System.out.println(" ( Y / N )");
             String userInput = scanner.nextLine().toLowerCase();
