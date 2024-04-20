@@ -1,7 +1,7 @@
 package process;
 
 
-import process.menuFiles.AboutUsMenu;
+import process.menuFiles.AboutMenu;
 import process.menuFiles.AccessExistingForms;
 import process.menuFiles.DataMainMenu;
 import process.menuFiles.FrontMenu;
@@ -34,7 +34,7 @@ public class SystemCore {
             ViewFields obj006 = new ViewFields();
             ResetFields obj008 = new ResetFields();
             SubmitFields obj010 = new SubmitFields();
-        AboutUsMenu obj004 = new AboutUsMenu();
+        AboutMenu obj004 = new AboutMenu();
         AccessExistingForms obj011 = new AccessExistingForms();
 
 
@@ -67,7 +67,7 @@ public class SystemCore {
                 // Run Submit Fields Menu (Go to SubmitFields.java)
                 if (SystemFunctions.getCurrentMenu().equals(menuNames.submitFieldsMenu)) {obj010.run(); continue;}
             // Run About Us Menu (AboutUsMenu.java)
-            if (SystemFunctions.getCurrentMenu().equals(menuNames.aboutUsMenu)) {obj004.run(); continue;}
+            if (SystemFunctions.getCurrentMenu().equals(menuNames.aboutMenu)) {obj004.run(); continue;}
             // Run Access Existing Forms Menu (AccessExistingForms.java)
             if (SystemFunctions.getCurrentMenu().equals(menuNames.accessExistingFormsMenu)) {obj011.run(); continue;}
 

@@ -25,25 +25,30 @@ public class LanguageFile {
         "|\t\t\t\t\t\t\t\t\t|",
         "|\t\t\t\t\t\t\t\t\t|",
         "|_______________________________________________________________________|",
-        "\n[i] ABOUT US\n\n\t[INSERT THE PROGRAM DESCRIPTION AND GROUP MEMBERS.....]",
+        "\n[i] ABOUT\n",
         "\n________________________________________________________________________"
     };
     
-    public String[] aboutUs = {
+    public String[] about = {
         "▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓",
         "▓▓▓▓▒▒▒▓▓▒▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒▒▒▓▓▒▒▒▓▓▓▓▓▓",
         "▓▓▓▓▒▓▓▓▓▓▓▒▓▓▓▓▓▓▓▓ HEALTHCARE MANAGEMENT SYSTEM ▓▓▓▓▓▓▓▓▓▒▓▓▓▓▓▓▒▓▓▓▓▓▓",
         "▓▓▓▓▒▒▒▓▓▒▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒▒▒▓▓▒▒▒▓▓▓▓▓▓",
         "▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓",
         "\n|----------------------------- ABOUT US -------------------------------|",
-        "|   Main Programmer: Josef Miko Uruqico",
-        "|   Graphic Designer: Venice Bianca Ochoa",
-        "|   Contributors:   ",
-        "|   Ranz Emmanuel Cuarto",
-        "|   Claire Bianca Ochoa",
+        "|   The HealthCare Management System is a simple console-based ",
+        "|   application that simulates the patient information management system ",
+        "|   usually seen within the professional medical field.",
+        "|   ",
+        "|   CREATORS:",
         "|",
-        "|   Press ENTER to go back",
-        "▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓"
+        "|   Josef Urquico",
+        "|   Claire Ochoa",
+        "|   Venice Ochoa",
+        "|   Ranz Cuarto",
+        "▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓",
+        "",
+        "Press ENTER to go back"
     };
 
     public String[] dataMainMenu = {
@@ -153,7 +158,7 @@ public class LanguageFile {
         switch (value) {
             case "frontMenu": {displayArrayAsText(frontMenuText); break;}
             case "dataMainMenu": {displayArrayAsText(dataMainMenu); break;}
-            case "aboutUs": {displayArrayAsText(aboutUs); break;}
+            case "about": {displayArrayAsText(about); break;}
 
         }
     }

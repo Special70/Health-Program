@@ -33,7 +33,7 @@ public class FrontMenu {
                 break;
             }
             case "i": { // Switch to About Us Display (See AboutUsMenu.java)
-                SystemFunctions.changeMenu(fileNames.aboutUsMenu);
+                SystemFunctions.changeMenu(fileNames.aboutMenu);
                 SystemFunctions.clearConsole();
             }
             default : return; // Exit menu if invalid input (Normally stopped by the if condition unless some unexpected error occurs)

@@ -17,7 +17,7 @@ public class MenuFileNames {
             public String viewFieldsMenu = "viewFieldsMenu";
             public String resetFieldsMenu = "resetFieldsMenu";
             public String submitFieldsMenu = "submitFieldsMenu";
-        public String aboutUsMenu = "aboutUs";
+        public String aboutMenu = "about";
         public String accessExistingFormsMenu = "accessExistingFormsMenu";
 
     
